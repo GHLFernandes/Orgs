@@ -1,8 +1,9 @@
 import React from 'react';
-import { View, Image, StyleSheet } from 'react-native';
+import { View, Image, StyleSheet, TouchableOpacity } from 'react-native';
 import Texto from '../../../componentes/Texto';
+import Botao from '../../../componentes/Btn';
 
-const Detalhes = ( { nome, logoFazenda, nomeFazenda, desc, preco } ) => {
+const Detalhes = ({ nome, logoFazenda, nomeFazenda, desc, preco, botao }) => {
     return <>
         <Texto style={estilos.nome}>{nome}</Texto>
         <View style={estilos.fazenda}>
@@ -11,6 +12,8 @@ const Detalhes = ( { nome, logoFazenda, nomeFazenda, desc, preco } ) => {
         </View>
         <Texto style={estilos.desc}>{desc}</Texto>
         <Texto style={estilos.preco}>{preco}</Texto>
+
+        <Botao>{botao}</Botao>
     </>
 };
 

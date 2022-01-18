@@ -15,7 +15,7 @@ export default function App() {
   }
 //...mock remove a camada externa do objeto (topo={mock.topo} detalhes={mock.detalhes})
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{flex: 1}}>
       <StatusBar />
       <Cesta {...mock} />    
     </SafeAreaView>
